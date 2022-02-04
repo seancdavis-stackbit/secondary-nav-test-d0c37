@@ -50,6 +50,7 @@ fields:
     items:
       type: list
       default: []
+      name: 
       items:
         type: model
         models:
