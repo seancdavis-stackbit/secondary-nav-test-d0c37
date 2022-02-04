@@ -177,7 +177,7 @@ function MobileMenu(props) {
     );
 }
 
-function HeaderLinkList({ heading, links, ...props }) {
+function HeaderLinkList(props) {
     return <div>
         <span data-sb-field-path=".heading">{heading}</span>
         {links.length > 0 && <ul>
