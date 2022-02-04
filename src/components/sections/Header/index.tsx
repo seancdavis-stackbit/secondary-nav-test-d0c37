@@ -77,6 +77,7 @@ function headerVariantB(props) {
             {primaryLinks.length > 0 && (
                 <ul className="hidden lg:flex border-l border-current divide-x divide-current ml-auto" data-sb-field-path=".primaryLinks">
                     {listOfLinks(primaryLinks)}
+                    Variant B
                 </ul>
             )}
             {socialLinks.length > 0 && (
