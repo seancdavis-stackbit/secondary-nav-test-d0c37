@@ -159,7 +159,7 @@ function MobileMenu(props) {
                             <div data-sb-field-path=".primaryLinks">
                                 {primaryLinks.length > 0 && (
                                     primaryLinks.map((list, idx) =>
-                                        <HeaderLinkList key={idx} heading={list.heading} links={list.links}  data-sb-field-path={``} />)
+                                        <HeaderLinkList key={idx} heading={list.heading} links={list.links}  data-sb-field-path={`.${idx}`} />)
                                 )}
                             </div>
                             {socialLinks.length > 0 && (
