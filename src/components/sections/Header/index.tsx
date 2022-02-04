@@ -183,7 +183,7 @@ function HeaderLinkList({ heading, links }) {
 }
 
 function HeaderLink({ link }) {
-    return <Link href={link.url}>{link.label}</Link>
+    return <Link href={link.url}><a>{link.label}</a></Link>
 }
 
 function siteLogoLink(props) {
