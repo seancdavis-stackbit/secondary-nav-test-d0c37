@@ -169,6 +169,7 @@ function MobileMenu(props) {
                     {(primaryLinks.length > 0 || socialLinks.length > 0) && (
                         <div className="flex flex-col justify-center flex-grow px-4 py-20 space-y-12">
                             {primaryLinks.length > 0 && (
+                                <HeaderLinkList
                                 <ul className="space-y-6" data-sb-field-path=".primaryLinks">
                                     {listOfLinks(primaryLinks, true)}
                                 </ul>
