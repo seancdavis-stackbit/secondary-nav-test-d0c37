@@ -56,7 +56,7 @@ function headerVariantA(props) {
         <div className="flex items-stretch relative">
             {(props.logo || (props.title && props.isTitleVisible)) && siteLogoLink(props)}
             {primaryLinks.length > 0 && (
-                
+                <p>Hi!</p>
             )}
             {/* {primaryLinks.length > 0 && (
                 <ul className="hidden lg:flex divide-x divide-current border-r border-current" data-sb-field-path=".primaryLinks">
