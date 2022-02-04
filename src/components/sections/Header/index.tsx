@@ -181,7 +181,7 @@ function MobileMenu(props) {
 }
 
 function HeaderLinkList({ heading, links }) {
-    return <div >
+    return <div data-sb-field-path=".primaryLinks">
         <span>{heading}</span>
         {links.length > 0 && <ul>
             {links.map((link, idx) => <HeaderLink key={idx} link={link} />)}
