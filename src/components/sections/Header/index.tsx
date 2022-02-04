@@ -47,12 +47,12 @@ function HeaderLinkList({ heading, links }) {
     return <div>
         <span>{heading}</span>
         {links.length > 0 && <ul>
-            {links.map(link => <HeaderLinkList link={link} />)}
+            {links.map(link => <HeaderLink link={link} />)}
         </ul>}
     </div>
 }
 
-function HeaderLink({link }) {
+function HeaderLink({ link }) {
     return <p>I'm a link!</p>
 }
 
