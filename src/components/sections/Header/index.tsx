@@ -47,7 +47,9 @@ function HeaderLinkList(props) {
     return <p>Hello World</p>
 }
 
-function HeaderLink(props) { }
+function HeaderLink(props) {
+    return <p>I'm a link!</p>
+}
 
 function headerVariantA(props) {
     const primaryLinks = props.primaryLinks || [];
