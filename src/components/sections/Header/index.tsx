@@ -58,11 +58,6 @@ function headerVariantA(props) {
             {primaryLinks.length > 0 && (
                 <p>Hi!</p>
             )}
-            {/* {primaryLinks.length > 0 && (
-                <ul className="hidden lg:flex divide-x divide-current border-r border-current" data-sb-field-path=".primaryLinks">
-                    {listOfLinks(primaryLinks)}
-                </ul>
-            )} */}
             {socialLinks.length > 0 && (
                 <ul className="hidden lg:flex border-l border-current ml-auto" data-sb-field-path=".socialLinks">
                     {listOfSocialLinks(socialLinks)}
