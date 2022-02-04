@@ -117,6 +117,7 @@ function headerVariantC(props) {
                     {listOfLinks(primaryLinks)}
                 </ul>
             )} */}
+            HELLO?
             {(primaryLinks.length > 0 || socialLinks.length > 0) && <MobileMenu {...props} />}
         </div>
     );
