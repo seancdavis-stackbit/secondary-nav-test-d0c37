@@ -6,7 +6,6 @@ fields:
   - type: string
     name: heading
     label: Heading
-    default: Your Brand
   - type: list
     name: links
     label: Links
