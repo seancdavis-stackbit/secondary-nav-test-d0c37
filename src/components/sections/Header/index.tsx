@@ -46,7 +46,7 @@ function headerVariants(props) {
 function HeaderLinkList({ heading, links }) {
     return <div>
         <span>{heading}</span>
-        {links.length > 0 && }
+        {links.length > 0 && <ul></ul>}
     </div>
 }
 
