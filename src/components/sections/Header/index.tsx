@@ -43,7 +43,7 @@ function headerVariants(props) {
     return null;
 }
 
-function HeaderLinkList({ links }) {
+function HeaderLinkList({ heading, links }) {
     return <p>Hello World</p>
 }
 
