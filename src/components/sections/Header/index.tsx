@@ -173,7 +173,7 @@ function MobileMenu(props) {
                             {primaryLinks.length > 0 && (
                                 primaryLinks.map(list => 
                                     <HeaderLinkList heading={list.heading} links={list.links} />
-                                    )}
+
                             )}
                             {socialLinks.length > 0 && (
                                 <ul className="flex flex-wrap justify-center" data-sb-field-path=".socialLinks">
