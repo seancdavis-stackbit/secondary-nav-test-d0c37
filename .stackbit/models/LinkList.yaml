@@ -3,4 +3,17 @@ name: Link
 label: Link
 labelField: label
 fields:
-  - 
+  - type: string
+    name: label
+    label: Label
+    default: Learn more
+  - type: string
+    name: altText
+    label: Alt text
+    description: The alternative text for screen readers
+    default: ''
+  - type: string
+    name: url
+    label: URL
+    default: '/'
+    required: true
