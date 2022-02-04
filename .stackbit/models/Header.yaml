@@ -48,6 +48,8 @@ fields:
     name: primaryLinks
     label: Primary navigation links
     items:
+      type: list
+    items:
       type: model
       models:
         - Link
