@@ -172,7 +172,7 @@ function MobileMenu(props) {
                         <div className="flex flex-col justify-center flex-grow px-4 py-20 space-y-12">
                             {primaryLinks.length > 0 && (
                                 {primaryLinks.map(link => 
-                                    <HeaderLinkList links={primaryLinks} />
+                                    <HeaderLinkList link={link} />
                                     )}
                             )}
                             {socialLinks.length > 0 && (
