@@ -74,12 +74,12 @@ function headerVariantB(props) {
     return (
         <div className="flex items-stretch relative">
             {(props.logo || (props.title && props.isTitleVisible)) && siteLogoLink(props)}
-            {primaryLinks.length > 0 && (
+            {/* {primaryLinks.length > 0 && (
                 <ul className="hidden lg:flex border-l border-current divide-x divide-current ml-auto" data-sb-field-path=".primaryLinks">
                     {listOfLinks(primaryLinks)}
                     Variant B
                 </ul>
-            )}
+            )} */}
             {socialLinks.length > 0 && (
                 <ul
                     className={classNames('hidden', 'lg:flex', 'border-l', 'border-current', {
