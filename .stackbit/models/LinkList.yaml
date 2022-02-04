@@ -3,12 +3,10 @@ name: Link
 label: Link
 labelField: label
 fields:
-  - type: string
-    name: label
-    label: Label
-    default: Learn more
-  - type: string
-    name: url
-    label: URL
-    default: '/'
-    required: true
+  - type: list
+    name: primaryLinks
+    label: Primary navigation links
+    items:
+      type: model
+      models:
+        - Link
