@@ -53,7 +53,7 @@ function HeaderLinkList({ heading, links }) {
 }
 
 function HeaderLink({ link }) {
-    return <Link href={link.url}></Link>
+    return <Link href={link.url}>{link.label}</Link>
 }
 
 function headerVariantA(props) {
