@@ -49,6 +49,7 @@ fields:
     label: Primary navigation links
     items:
       type: list
+      default: []
     items:
       type: model
       models:
