@@ -106,8 +106,8 @@ function headerVariantC(props) {
                 <ul className="hidden lg:flex border-l border-current ml-auto" data-sb-field-path=".socialLinks">
                     {listOfSocialLinks(socialLinks)}
                 </ul>
-                <p>VARIANT </p>
             )}
+            VARIANT C
             {primaryLinks.length > 0 && (
                 <ul
                     className={classNames('hidden', 'lg:flex', 'border-l', 'border-current', 'divide-x', 'divide-current', {
