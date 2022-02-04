@@ -107,7 +107,6 @@ function headerVariantC(props) {
                     {listOfSocialLinks(socialLinks)}
                 </ul>
             )}
-            VARIANT C
             {primaryLinks.length > 0 && (
                 <ul
                     className={classNames('hidden', 'lg:flex', 'border-l', 'border-current', 'divide-x', 'divide-current', {
