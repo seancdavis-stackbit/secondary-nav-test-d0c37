@@ -48,7 +48,7 @@ fields:
     name: primaryLinks
     label: Primary navigation links
     items:
-      type: list
+      type: model
       default: []
       name: link
       label: Link
