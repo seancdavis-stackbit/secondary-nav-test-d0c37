@@ -88,6 +88,7 @@ function headerVariantB(props) {
                     data-sb-field-path=".socialLinks"
                 >
                     {listOfSocialLinks(socialLinks)}
+                    Variant B
                 </ul>
             )}
             {(primaryLinks.length > 0 || socialLinks.length > 0) && <MobileMenu {...props} />}
