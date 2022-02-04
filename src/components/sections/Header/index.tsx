@@ -47,7 +47,7 @@ function HeaderLinkList({ heading, links }) {
     return <div>
         <span>{heading}</span>
         {links.length > 0 && <ul>
-            
+            {links.map(link => <HeaderLinkList link={link} />)}
         </ul>}
     </div>
 }
