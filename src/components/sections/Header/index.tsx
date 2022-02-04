@@ -8,7 +8,7 @@ import ImageBlock from '../../molecules/ImageBlock';
 import CloseIcon from '../../svgs/close';
 import MenuIcon from '../../svgs/menu';
 
-import { getDataAttrs } from '../../../utils/get-data-attrs'
+import { getDataAttrs } from '../../../utils/get-data-attrs';
 
 export default function Header(props) {
     const headerWidth = props.styles?.self?.width || 'narrow';
@@ -45,16 +45,13 @@ function headerVariants(props) {
     return null;
 }
 
-
 function headerVariantA(props) {
     const primaryLinks = props.primaryLinks || [];
     const socialLinks = props.socialLinks || [];
     return (
         <div className="flex items-stretch relative">
             {(props.logo || (props.title && props.isTitleVisible)) && siteLogoLink(props)}
-            {primaryLinks.length > 0 && (
-                <p>Hi!</p>
-            )}
+            {primaryLinks.length > 0 && <p>Hi!</p>}
             {socialLinks.length > 0 && (
                 <ul className="hidden lg:flex border-l border-current ml-auto" data-sb-field-path=".socialLinks">
                     {listOfSocialLinks(socialLinks)}
@@ -105,9 +102,13 @@ function headerVariantC(props) {
                 </ul>
             )}
             {primaryLinks.length > 0 && (
-                primaryLinks.map((list, idx) =>
-                    <HeaderLinkList key={idx} heading={list.heading} links={list.links} />)
+                <ul data-sb-field-path=".primaryLinks">
+                    {primaryLinks.map((list, idx) => (
+                        <HeaderLinkList key={idx} heading={list.heading} links={list.links} data-sb-field-path={`.${idx}`} />
+                    ))}
+                </ul>
             )}
+
             {(primaryLinks.length > 0 || socialLinks.length > 0) && <MobileMenu {...props} />}
         </div>
     );
@@ -159,10 +160,10 @@ function MobileMenu(props) {
                     {(primaryLinks.length > 0 || socialLinks.length > 0) && (
                         <div className="flex flex-col justify-center flex-grow px-4 py-20 space-y-12">
                             <div data-sb-field-path=".primaryLinks">
-                                {primaryLinks.length > 0 && (
-                                    primaryLinks.map((list, idx) =>
-                                        <HeaderLinkList key={idx} heading={list.heading} links={list.links} data-sb-field-path={`.${idx}`} />)
-                                )}
+                                {primaryLinks.length > 0 &&
+                                    primaryLinks.map((list, idx) => (
+                                        <HeaderLinkList key={idx} heading={list.heading} links={list.links} data-sb-field-path={`.${idx}`} />
+                                    ))}
                             </div>
                             {socialLinks.length > 0 && (
                                 <ul className="flex flex-wrap justify-center" data-sb-field-path=".socialLinks">
@@ -178,16 +179,26 @@ function MobileMenu(props) {
 }
 
 function HeaderLinkList(props) {
-    return <div {...getDataAttrs(props)}>
-        <span data-sb-field-path=".heading">{props.heading}</span>
-        {props.links.length > 0 && <ul>
-            {props.links.map((link, idx) => <HeaderLink key={idx} link={link} />)}
-        </ul>}
-    </div>
+    return (
+        <div {...getDataAttrs(props)}>
+            <span data-sb-field-path=".heading">{props.heading}</span>
+            {props.links.length > 0 && (
+                <ul data-sb-field-path=".links">
+                    {props.links.map((link, idx) => (
+                        <HeaderLink key={idx} link={link} data-sb-field-path={`.${idx}`} />
+                    ))}
+                </ul>
+            )}
+        </div>
+    );
 }
 
-function HeaderLink({ link }) {
-    return <Link href={link.url}><a data-sb-field-path=".label">{link.label}</a></Link>
+function HeaderLink({ link, 'data-sb-field-path': fieldPath }) {
+    return (
+        <Link href={link.url} data-sb-field-path={fieldPath}>
+            <a data-sb-field-path=".label">{link.label}</a>
+        </Link>
+    );
 }
 
 function siteLogoLink(props) {
