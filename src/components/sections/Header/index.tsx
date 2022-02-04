@@ -43,7 +43,7 @@ function headerVariants(props) {
     return null;
 }
 
-function He
+function HeaderLink(props) {}
 
 function headerVariantA(props) {
     const primaryLinks = props.primaryLinks || [];
