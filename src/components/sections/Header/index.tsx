@@ -44,7 +44,9 @@ function headerVariants(props) {
 }
 
 function HeaderLinkList({ heading, links }) {
-    return <p>Hello World</p>
+    return <div>
+        <span>{heading}</span>
+    </div>
 }
 
 function HeaderLink(props) {
