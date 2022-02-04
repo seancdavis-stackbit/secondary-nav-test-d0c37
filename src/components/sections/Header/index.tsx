@@ -45,6 +45,8 @@ function headerVariants(props) {
 
 function HeaderLinkList(props) {}
 
+function HeaderLinkList(props) {}
+
 function headerVariantA(props) {
     const primaryLinks = props.primaryLinks || [];
     const socialLinks = props.socialLinks || [];
