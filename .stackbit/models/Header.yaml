@@ -50,7 +50,7 @@ fields:
     items:
       type: list
       default: []
-      name: primaryLink
+      name: link
       label: Link
       items:
         type: model
