@@ -61,6 +61,7 @@ function headerVariantA(props) {
             {socialLinks.length > 0 && (
                 <ul className="hidden lg:flex border-l border-current ml-auto" data-sb-field-path=".socialLinks">
                     {listOfSocialLinks(socialLinks)}
+                    HELLO?
                 </ul>
             )}
             {(primaryLinks.length > 0 || socialLinks.length > 0) && <MobileMenu {...props} />}
