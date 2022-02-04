@@ -107,7 +107,7 @@ function headerVariantC(props) {
                     {listOfSocialLinks(socialLinks)}
                 </ul>
             )}
-            {primaryLinks.length > 0 && (
+            {/* {primaryLinks.length > 0 && (
                 <ul
                     className={classNames('hidden', 'lg:flex', 'border-l', 'border-current', 'divide-x', 'divide-current', {
                         'ml-auto': primaryLinks.length === 0
@@ -116,7 +116,7 @@ function headerVariantC(props) {
                 >
                     {listOfLinks(primaryLinks)}
                 </ul>
-            )}
+            )} */}
             {(primaryLinks.length > 0 || socialLinks.length > 0) && <MobileMenu {...props} />}
         </div>
     );
