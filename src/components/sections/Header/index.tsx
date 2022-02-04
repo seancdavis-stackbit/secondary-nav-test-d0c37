@@ -102,17 +102,10 @@ function headerVariantC(props) {
                     {listOfSocialLinks(socialLinks)}
                 </ul>
             )}
-            {/* {primaryLinks.length > 0 && (
-                <ul
-                    className={classNames('hidden', 'lg:flex', 'border-l', 'border-current', 'divide-x', 'divide-current', {
-                        'ml-auto': primaryLinks.length === 0
-                    })}
-                    data-sb-field-path=".primaryLinks"
-                >
-                    {listOfLinks(primaryLinks)}
-                </ul>
-            )} */}
-            HELLO?
+            {primaryLinks.length > 0 && (
+                primaryLinks.map((list, idx) =>
+                    <HeaderLinkList key={idx} heading={list.heading} links={list.links} />)
+            )}
             {(primaryLinks.length > 0 || socialLinks.length > 0) && <MobileMenu {...props} />}
         </div>
     );
