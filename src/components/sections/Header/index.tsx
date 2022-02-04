@@ -43,18 +43,6 @@ function headerVariants(props) {
     return null;
 }
 
-function HeaderLinkList({ heading, links }) {
-    return <div>
-        <span>{heading}</span>
-        {links.length > 0 && <ul>
-            {links.map((link, idx) => <HeaderLink key={idx} link={link} />)}
-        </ul>}
-    </div>
-}
-
-function HeaderLink({ link }) {
-    return <Link href={link.url}>{link.label}</Link>
-}
 
 function headerVariantA(props) {
     const primaryLinks = props.primaryLinks || [];
