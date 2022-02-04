@@ -50,19 +50,19 @@ fields:
     items:
       type: list
       default: []
-    items:
-      type: model
-      models:
-        - Link
-    default:
-      - type: Link
-        label: Home
-        url: /
-        altText: Home
-      - type: Link
-        label: Blog
-        url: /
-        altText: Blog
+      items:
+        type: model
+        models:
+          - Link
+      default:
+        - type: Link
+          label: Home
+          url: /
+          altText: Home
+        - type: Link
+          label: Blog
+          url: /
+          altText: Blog
   - type: list
     name: socialLinks
     label: Social links
