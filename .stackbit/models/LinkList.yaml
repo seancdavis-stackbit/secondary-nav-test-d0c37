@@ -8,11 +8,6 @@ fields:
     label: Label
     default: Learn more
   - type: string
-    name: altText
-    label: Alt text
-    description: The alternative text for screen readers
-    default: ''
-  - type: string
     name: url
     label: URL
     default: '/'
