@@ -8,6 +8,8 @@ import ImageBlock from '../../molecules/ImageBlock';
 import CloseIcon from '../../svgs/close';
 import MenuIcon from '../../svgs/menu';
 
+import { getDataAttrs } from '../../../utils/get-data-attrs'
+
 export default function Header(props) {
     const headerWidth = props.styles?.self?.width || 'narrow';
     return (
