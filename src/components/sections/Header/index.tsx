@@ -104,7 +104,7 @@ function headerVariantC(props) {
             )}
             {primaryLinks.length > 0 && (
                 primaryLinks.map((list, idx) =>
-                    <HeaderLinkList key={idx} heading={list.heading} links={list.links} data-sb-field-path=".primaryLinks" />)
+                    <HeaderLinkList key={idx} heading={list.heading} links={list.links} />)
             )}
             {(primaryLinks.length > 0 || socialLinks.length > 0) && <MobileMenu {...props} />}
         </div>
