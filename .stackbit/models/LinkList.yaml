@@ -1,6 +1,6 @@
 type: object
 name: LinkList
-label: Link
+label: Link List
 labelField: label
 fields:
   - type: string
