@@ -4,8 +4,8 @@ label: Link
 labelField: label
 fields:
   - type: string
-    name: title
-    label: Title
+    name: heading
+    label: Heading
     default: Your Brand
   - type: list
     name: links
