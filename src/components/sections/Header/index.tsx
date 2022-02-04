@@ -106,6 +106,7 @@ function headerVariantC(props) {
                 primaryLinks.map((list, idx) =>
                     <HeaderLinkList key={idx} heading={list.heading} links={list.links} />)
             )}
+            HL?
             {(primaryLinks.length > 0 || socialLinks.length > 0) && <MobileMenu {...props} />}
         </div>
     );
