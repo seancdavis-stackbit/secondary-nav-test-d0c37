@@ -180,6 +180,19 @@ function MobileMenu(props) {
     );
 }
 
+function HeaderLinkList({ heading, links }) {
+    return <div>
+        <span>{heading}</span>
+        {links.length > 0 && <ul>
+            {links.map((link, idx) => <HeaderLink key={idx} link={link} />)}
+        </ul>}
+    </div>
+}
+
+function HeaderLink({ link }) {
+    return <Link href={link.url}>{link.label}</Link>
+}
+
 function siteLogoLink(props) {
     return (
         <div className="border-r border-current flex items-center">
