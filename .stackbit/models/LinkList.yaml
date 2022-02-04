@@ -3,6 +3,7 @@ name: Link
 label: Link
 labelField: label
 fields:
+  - type: string
   - type: list
     name: links
     label: Links
