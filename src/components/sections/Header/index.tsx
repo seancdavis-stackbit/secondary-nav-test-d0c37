@@ -44,7 +44,7 @@ function headerVariants(props) {
 }
 
 function HeaderLinkList(props) {
-    render <p>Hello World</p>
+    return <p>Hello World</p>
 }
 
 function HeaderLink(props) {}
