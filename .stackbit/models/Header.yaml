@@ -51,6 +51,7 @@ fields:
       type: list
       default: []
       name: primaryLink
+      label
       items:
         type: model
         models:
