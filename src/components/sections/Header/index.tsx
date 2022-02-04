@@ -52,7 +52,7 @@ function HeaderLinkList({ heading, links }) {
     </div>
 }
 
-function HeaderLink(props) {
+function HeaderLink({link }) {
     return <p>I'm a link!</p>
 }
 
