@@ -183,7 +183,7 @@ function HeaderLinkList({ heading, links }) {
 }
 
 function HeaderLink({ link }) {
-    return <Link href={link.url}><a>{link.label}</a></Link>
+    return <Link href={link.url}><a data-sb-field-path=".label">{link.label}</a></Link>
 }
 
 function siteLogoLink(props) {
