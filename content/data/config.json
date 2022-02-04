@@ -36,7 +36,18 @@
         "primaryLinks": [
             {
                 "heading": "Item #1",
-                "links": []
+                "links": [
+                    {
+                        "label": "Learn more",
+                        "altText": "",
+                        "url": "/",
+                        "showIcon": false,
+                        "icon": "arrowRight",
+                        "iconPosition": "right",
+                        "elementId": "",
+                        "type": "Link"
+                    }
+                ]
             }
         ]
     },
