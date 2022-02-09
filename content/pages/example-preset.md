@@ -25,7 +25,7 @@ sections:
     text: ''
     actions:
       - type: Button
-        label: Hire me
+        label: Do Something Important
         showIcon: true
         icon: arrowRight
         style: primary
