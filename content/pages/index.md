@@ -129,7 +129,7 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: Submit Your Project
-    text: 
+    text: Hello
     form:
       type: FormBlock
       elementId: sign-up-form
