@@ -156,7 +156,7 @@ sections:
           isRequired: true
           width: full
           type: EmailFormControl
-        - name: url
+        - name: project_url
           label: Project URL
           hideLabel: true
           placeholder: Address
