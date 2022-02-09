@@ -3,6 +3,7 @@
   "presets": [
       {
           "label": "Preset Example",
+          "thumbnail": "images/page-empty.png",
           "data": {
 "metaTitle": null,
 "metaDescription": null,
