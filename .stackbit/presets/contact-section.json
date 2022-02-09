@@ -2,7 +2,8 @@
     "model": "ContactSection",
     "presets": [
         {
-            "label": "Contact transparent - no media",
+            "label": "Contact - Submit Your Project",
+            "data": {}
         },
         {
             "label": "Contact transparent - no media",
