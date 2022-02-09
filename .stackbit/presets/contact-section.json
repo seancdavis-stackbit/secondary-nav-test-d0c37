@@ -3,6 +3,9 @@
     "presets": [
         {
             "label": "Contact transparent - no media",
+        },
+        {
+            "label": "Contact transparent - no media",
             "thumbnail": "images/contact-transparent-no-media.png",
             "data": {
                 "colors": "colors-f",
