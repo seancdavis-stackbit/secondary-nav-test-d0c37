@@ -5,7 +5,7 @@ addTitleSuffix: true
 socialImage: null
 metaTags: []
 title: Example Preset
-colors: colors-a
+colors: colors-d
 backgroundImage:
   url: /images/bg2.jpg
   backgroundSize: cover
