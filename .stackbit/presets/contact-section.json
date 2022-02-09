@@ -4,8 +4,80 @@
         {
             "label": "Contact - Submit Your Project",
             "data": {
-                
-            }
+  "type": "ContactSection",
+  "colors": "colors-f",
+  "backgroundSize": "full",
+  "title": "Submit Your Project",
+  "text": "Submit your project to appear in our showcase.",
+  "form": {
+    "type": "FormBlock",
+    "elementId": "sign-up-form",
+    "destination": "",
+    "action": "/.netlify/functions/submission_created",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Name",
+        "hideLabel": true,
+        "placeholder": "First Name",
+        "isRequired": true,
+        "width": "1/2",
+        "type": "TextFormControl"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "hideLabel": true,
+        "placeholder": "Email",
+        "isRequired": true,
+        "width": "1/2",
+        "type": "EmailFormControl"
+      },
+      {
+        "name": "project_url",
+        "label": "Project URL",
+        "hideLabel": true,
+        "placeholder": "Project URL",
+        "isRequired": true,
+        "width": "full",
+        "type": "TextFormControl"
+      }
+    ],
+    "submitLabel": "Submit Project 🚀",
+    "styles": {
+      "submitLabel": {
+        "textAlign": "center"
+      }
+    }
+  },
+  "styles": {
+    "self": {
+      "height": "auto",
+      "width": "narrow",
+      "margin": [
+        "mt-0",
+        "mb-0",
+        "ml-0",
+        "mr-0"
+      ],
+      "padding": [
+        "pt-24",
+        "pb-24",
+        "pr-4",
+        "pl-4"
+      ],
+      "alignItems": "center",
+      "justifyContent": "center",
+      "flexDirection": "row"
+    },
+    "title": {
+      "textAlign": "left"
+    },
+    "text": {
+      "textAlign": "left"
+    }
+  }
+}
         },
         {
             "label": "Contact transparent - no media",
