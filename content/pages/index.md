@@ -135,7 +135,7 @@ sections:
       destination: ''
       action: /.netlify/functions/submission_created
       fields:
-        - name: firstName
+        - name: name
           label: First Name
           hideLabel: true
           placeholder: First Name
