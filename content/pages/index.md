@@ -136,7 +136,7 @@ sections:
       action: /.netlify/functions/submission_created
       fields:
         - name: name
-          label: First Name
+          label: Name
           hideLabel: true
           placeholder: First Name
           isRequired: true
