@@ -3,6 +3,7 @@
     "presets": [
         {
             "label": "Contact - Submit Your Project",
+            "thumbnail": "images/contact-submit-project.png",
             "data": {
   "type": "ContactSection",
   "colors": "colors-f",
