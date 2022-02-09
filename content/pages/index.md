@@ -163,7 +163,7 @@ sections:
           isRequired: true
           width: full
           type: TextFormControl
-      submitLabel: "Submit \U0001F680"
+      submitLabel: "Submit Project \U0001F680"
       styles:
         submitLabel:
           textAlign: center
