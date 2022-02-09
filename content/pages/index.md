@@ -159,7 +159,7 @@ sections:
         - name: project_url
           label: Project URL
           hideLabel: true
-          placeholder: Address
+          placeholder: Project URL
           isRequired: true
           width: full
           type: TextFormControl
