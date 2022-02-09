@@ -2,7 +2,7 @@
     "model": "PageLayout",
     "presets": [
         {
-            "label": "Empty page",
+            "label": "Preset Example",
             "thumbnail": "images/page-empty.png",
             "data": {
             }
