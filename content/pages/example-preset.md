@@ -18,9 +18,10 @@ sections:
     backgroundSize: full
     title: This page is an example that we're going to use to create a preset
     subtitle: >-
-      This is my info—I’m sharing it all this with ya’ll to impress you with all
-      the hard work I’ve done in the past few years. Once you’re impressed, you
-      can continue to scroll down to see more details and credentials about me.
+      Veniam eiusmod laborum elit sunt elit cillum tempor anim est nulla
+      excepteur elit. Sint minim in est consequat. Cupidatat do nulla amet Lorem
+      irure magna duis. Amet nulla exercitation non quis tempor irure sit
+      pariatur deserunt duis laborum sunt.
     text: ''
     actions:
       - type: Button
