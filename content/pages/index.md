@@ -129,7 +129,7 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: Submit Your Project
-    text: Submit your project to be entered into our showcase.
+    text: Submit your project to appear in our showcase.
     form:
       type: FormBlock
       elementId: sign-up-form
