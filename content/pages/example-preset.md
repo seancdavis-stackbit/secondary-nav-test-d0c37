@@ -62,7 +62,7 @@ sections:
     type: HeroSection
   - colors: colors-f
     elementId: ''
-    title: Gallery
+    title: Image Gallery
     subtitle: This is the subtitle
     images:
       - type: ImageBlock
