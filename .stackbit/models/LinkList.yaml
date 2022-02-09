@@ -1,0 +1,15 @@
+type: object
+name: LinkList
+label: Link List
+labelField: label
+fields:
+  - type: string
+    name: heading
+    label: Heading
+  - type: list
+    name: links
+    label: Links
+    items:
+      type: model
+      models:
+        - Link

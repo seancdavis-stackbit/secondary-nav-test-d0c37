@@ -50,7 +50,7 @@ fields:
     items:
       type: model
       models:
-        - Link
+        - LinkList
     default:
       - type: Link
         label: Home

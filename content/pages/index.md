@@ -128,25 +128,19 @@ sections:
   - type: ContactSection
     colors: colors-f
     backgroundSize: full
-    title: "Got an interesting project? Tell me more...\U0001F4AC"
+    title: Submit Your Project
+    text: Submit your project to appear in our showcase.
     form:
       type: FormBlock
       elementId: sign-up-form
       destination: ''
       action: /.netlify/functions/submission_created
       fields:
-        - name: firstName
-          label: First Name
+        - name: name
+          label: Name
           hideLabel: true
           placeholder: First Name
           isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
           width: 1/2
           type: TextFormControl
         - name: email
@@ -154,21 +148,16 @@ sections:
           hideLabel: true
           placeholder: Email
           isRequired: true
-          width: full
+          width: 1/2
           type: EmailFormControl
-        - name: address
-          label: Address
+        - name: project_url
+          label: Project URL
           hideLabel: true
-          placeholder: Address
+          placeholder: Project URL
           isRequired: true
           width: full
           type: TextFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve updates
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
+      submitLabel: "Submit Project \U0001F680"
       styles:
         submitLabel:
           textAlign: center

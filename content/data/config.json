@@ -6,23 +6,6 @@
         "isSticky": false,
         "title": "Personal",
         "isTitleVisible": true,
-        "primaryLinks": [
-            {
-                "type": "Link",
-                "label": "Info",
-                "url": "/info"
-            },
-            {
-                "type": "Link",
-                "label": "Projects",
-                "url": "/projects"
-            },
-            {
-                "type": "Link",
-                "label": "Blog",
-                "url": "/blog"
-            }
-        ],
         "socialLinks": [
             {
                 "type": "Social",
@@ -42,9 +25,31 @@
         "styles": {
             "self": {
                 "width": "full",
-                "padding": ["pt-5", "pb-5", "pr-4", "pl-4"]
+                "padding": [
+                    "pt-5",
+                    "pb-5",
+                    "pr-4",
+                    "pl-4"
+                ]
             }
-        }
+        },
+        "primaryLinks": [
+            {
+                "heading": "Item #1",
+                "links": [
+                    {
+                        "label": "Home",
+                        "altText": "",
+                        "url": "/",
+                        "showIcon": false,
+                        "icon": "arrowRight",
+                        "iconPosition": "right",
+                        "elementId": "",
+                        "type": "Link"
+                    }
+                ]
+            }
+        ]
     },
     "footer": {
         "primaryLinks": [
@@ -86,7 +91,12 @@
         "styles": {
             "self": {
                 "width": "narrow",
-                "padding": ["pt-16", "pb-16", "pr-4", "pl-4"]
+                "padding": [
+                    "pt-16",
+                    "pb-16",
+                    "pr-4",
+                    "pl-4"
+                ]
             }
         }
     }
