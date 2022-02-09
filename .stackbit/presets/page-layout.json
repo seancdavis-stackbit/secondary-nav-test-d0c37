@@ -5,6 +5,12 @@
             "label": "Empty page",
             "thumbnail": "images/page-empty.png",
             "data": {
+            }
+        },
+        {
+            "label": "Empty page",
+            "thumbnail": "images/page-empty.png",
+            "data": {
                 "title": "Empty page",
                 "backgroundImage": {
                     "url": "/images/bg2.jpg",
